@@ -3,9 +3,16 @@
 // convenience to get you started writing code faster.
 //
 
+const dnaToRnaTranslation = {
+  C: 'G',
+  G: 'C'
+}
+
 export const toRna = (dnaNucleotide) => {
-  if (dnaNucleotide === 'C') {
-    return 'G'
+  const rnaNucleotide = dnaToRnaTranslation[dnaNucleotide]
+
+  if (rnaNucleotide !== undefined) {
+    return rnaNucleotide
   } else {
     return ''
   }
