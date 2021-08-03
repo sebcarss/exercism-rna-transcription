@@ -6,7 +6,8 @@
 const dnaToRnaTranslation = {
   C: 'G',
   G: 'C',
-  T: 'A'
+  T: 'A',
+  A: 'U'
 }
 
 export const toRna = (dnaNucleotide) => {
