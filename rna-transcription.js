@@ -3,6 +3,10 @@
 // convenience to get you started writing code faster.
 //
 
-export const toRna = () => {
-  return '';
+export const toRna = (dnaNucleotide) => {
+  if (dnaNucleotide === 'C') {
+    return 'G'
+  } else {
+    return ''
+  }
 };
