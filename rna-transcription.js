@@ -10,12 +10,12 @@ const dnaToRnaTranslation = {
   A: 'U'
 }
 
-export const toRna = (dnaNucleotide) => {
-  const rnaNucleotide = dnaToRnaTranslation[dnaNucleotide]
-
-  if (rnaNucleotide !== undefined) {
-    return rnaNucleotide
-  } else {
-    return ''
+export const toRna = (dnaNucleotides) => {
+  let rnaNucleotides = ''
+  
+  for (const dnaNucleotide of dnaNucleotides) {
+    rnaNucleotides += dnaToRnaTranslation[dnaNucleotide]
   }
+
+  return rnaNucleotides
 };
